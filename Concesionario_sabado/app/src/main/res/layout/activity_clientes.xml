@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientesActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Clientes" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etidentificacion"
+            android:layout_width="203dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Identificacion"
+            android:inputType="number"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btbuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="Consultar"
+            android:text="Buscar"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/etdireccion"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Dirección" />
+
+    <EditText
+        android:id="@+id/ettelefono"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:enabled="false"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Teléfono" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:enabled="false"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:text=" Activo" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="Guardar"
+            android:text="Guardar"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="Anular"
+            android:text="Anular / desanular"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="133dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="Limpiar"
+            android:text="Limpiar"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btlistar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:onClick="Listar"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Listar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:onClick="Regresar"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Regresar" />
+    </LinearLayout>
+</LinearLayout>
