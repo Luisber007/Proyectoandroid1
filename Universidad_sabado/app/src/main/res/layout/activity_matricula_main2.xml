@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MatriculaMainActivity2">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="Matrículas" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etcodigo"
+            android:layout_width="163dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Codigo matricula"
+            android:inputType="number"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btbuscarmat"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+
+            android:text="Buscar"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etfecha"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Fecha sistema"
+        android:inputType="date"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etcarnet"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Número carnet"
+            android:inputType="number"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btbuscarcar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:onClick="Consultar_carnet"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Buscar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvnombre"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="Nombre"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvcarrera"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="Carrera"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etcodmateria"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Código materia"
+            android:inputType="text"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btbuscarmateria"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="Consultar_materia"
+            android:text="Buscar"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvnommateria"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="Materia"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvcreditos"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:hint="Creditos" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text=" Activo" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btadicionar"
+            android:layout_width="185dp"
+            android:layout_height="65dp"
+            android:text="Adicionar"
+            android:onClick="Adicionar"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="185dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:text="Anular"
+            android:onClick="Anular"
+            android:layout_marginLeft="7dp"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="185dp"
+            android:layout_height="65dp"
+            android:text="Limpiar"
+            android:onClick="Limpiar"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/btregresar"
+            android:layout_width="185dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:text="Regresar"
+            android:onClick="Regresar"
+            android:layout_marginLeft="7dp"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

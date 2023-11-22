@@ -38,11 +38,11 @@
             android:id="@+id/btbuscar"
             android:layout_width="170dp"
             android:layout_height="55dp"
-            android:textSize="30dp"
-            android:onClick="Consultar"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:text="Buscar" />
+            android:onClick="Consultar"
+            android:text="Buscar"
+            android:textSize="30dp" />
     </LinearLayout>
 
     <EditText

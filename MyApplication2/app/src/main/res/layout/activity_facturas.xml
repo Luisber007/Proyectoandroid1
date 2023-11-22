@@ -48,12 +48,12 @@
         android:id="@+id/etfecha"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:textSize="30dp"
-        android:gravity="center"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:gravity="center"
+        android:hint="Digite fecha factura"
         android:inputType="textPersonName"
-        android:hint="Digite fecha factura" />
+        android:textSize="30dp" />
 
     <LinearLayout
         android:layout_width="370dp"
@@ -79,6 +79,7 @@
             android:layout_height="55dp"
             android:textSize="25dp"
             android:layout_weight="1"
+            android:onClick="ConsultarCliente"
             android:text="Cliente" />
     </LinearLayout>
 
@@ -123,7 +124,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="Placa"
-            android:inputType="number"
+            android:inputType="text"
             android:textSize="30dp" />
 
         <Button
@@ -131,6 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:textSize="25dp"
+            android:onClick="ConsultarVehiculo"
             android:layout_weight="1"
             android:text="Vehiculo" />
     </LinearLayout>
@@ -166,6 +168,7 @@
         android:layout_width="370dp"
         android:layout_height="55dp"
         android:textSize="30dp"
+        android:enabled="false"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:text=" Activo" />
@@ -182,6 +185,7 @@
             android:layout_width="95dp"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:onClick="Adicionar"
             android:text="Adicionar"
             android:textSize="25dp" />
 
@@ -190,6 +194,7 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:textSize="25dp"
+            android:onClick="Anular"
             android:layout_marginLeft="7dp"
             android:layout_weight="1"
             android:text="Anular" />
@@ -207,6 +212,7 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:textSize="25dp"
+            android:onClick="Limpiar"
             android:layout_weight="1"
             android:text="Limpiar" />
 
@@ -215,6 +221,7 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:textSize="25dp"
+            android:onClick="Regresar"
             android:layout_marginLeft="7dp"
             android:layout_weight="1"
             android:text="Regresar" />

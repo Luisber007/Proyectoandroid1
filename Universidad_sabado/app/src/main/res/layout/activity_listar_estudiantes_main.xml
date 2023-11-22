@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListarEstudiantesMainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Lista Estudiantes" />
+
+    <TextView
+        android:id="@+id/tvaplicacion"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvestudiantes"
+        android:layout_width="370dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="400dp" />
+
+    <Button
+        android:id="@+id/btregresar"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:onClick="Regresar"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Regresar" />
+</LinearLayout>
